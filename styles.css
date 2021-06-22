@@ -1,0 +1,301 @@
+/* agregamos un estilo por defecto que resete el codigo o estilos globales del navegador */
+*{
+    box-sizing: border-box;/* el espacio interno y externo sumen un solo espaciado */
+    margin: 0;/* no haya espaciados hacia afuera */
+    padding: 0; /* no haya espaciados hacia adentro*/
+}
+
+body { /* todo el contenido body va tener el color negro*/
+background-image:url(img/fondo.jpg);
+background-color: rgb(22 34 57 / 95%);
+
+font-size: 16px;
+/*FONT OSWALD, estilo de letras*/
+font-family: 'Montserrat', sans-serif;
+}
+
+a{/* todas las etiquetas a tendran el color de letra blanco*/
+color: #ffffff;
+text-decoration: none;/* los textos no tengan subrayado*/
+}
+
+ul{/* pierda los bordes de seleccion*/
+    list-style: none;
+}
+
+.container{/*todo el contenido en el*/
+    width: 90%;
+    margin: auto;
+}
+
+/*Navigation*/
+.nav-main{
+font-size: 15px; /*letra de navegacion a 20px tamaño*/
+display: flex;/*letras de navegacion a la derecha*/
+justify-content: space-between;/*extrecho al contenido body*/
+align-items: center;
+height: 50px;
+padding: 80px 0;
+}
+
+.nav-brand{
+    width: 350px;
+}
+
+/*NAV LEFT*/
+.nav-main ul {
+    display: flex;/*letras de Navigation uno al costado del otro*/
+}
+
+.nav-main ul li {
+    padding: 10px;/*separa las letras de Navigation uno al costado del otro*/
+}
+
+.nav-main ul li a{
+    padding: 2 px;
+}
+
+.nav-main ul li a:hover {
+border-bottom: 2px solid #01b30f; /*hace aparecer subrayado al mometo de selecionar las pestañas de navegacion*/
+}
+
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 600px;/*espacio desde el logo hasta las letras de navegacion*/
+}
+
+.menu-btn{ /*estilizamos el boton menu*/
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 60px; /*distancia del buscador y barra menu*/
+    padding: 45px 0;
+    z-index: 2;
+    font-size: 1.5rem;  
+    display: none;
+}
+
+
+
+/*SHOWCASE  estilizando la imagen principal y contenido*/
+hr{
+    margin: 10px 0;
+}
+/*https://www.pexels.com/      pagina para descargar imagenes de alta calidad para paginas web*/
+.showcase{
+    text-align: center;
+    width: 100%;
+    height: 550px;
+    background: url('./img/showcase2.jpeg') no-repeat center/cover; /*jalamos la imagen central y para el tamaño completo aplicamos center/cover*/
+    padding: 50px;
+    margin-bottom: 25px; /*separa la imagen principal de las otras en pie*/
+    display: flex;
+    flex-direction: column; /*centra el texto en la imagen*/
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn{
+    cursor: pointer;/*para que aparezca el icono al momento de presionar*/
+    display: inline-block;/*centra el texto en la imagen*/
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;/*10pxarriba y 20px a los lados*/
+    background: #262626;/*color del cuadro interior*/
+    color: #ffffff;/*color del texto que esta dentro del botton blanco*/
+    font-size: 15px;
+    border: 1px solid #ffffff;
+    margin: 10px 0;
+}
+.btn:hover{
+opacity: .6;
+}
+
+.showcase h2,
+.showcase{
+    color: #000000;/*color del texto dentro de la imagen principal*/
+    margin-bottom: 10px;
+}
+
+/*NEWS CARS - estilizamos los div news cars*/
+.news-cars{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);/*1fr 1fr 1fr 1fr    permite crear columnas*/
+    gap: 40px; /*Espaciado interno de las imagenes en un 25px, las imagenes no esten pegadas*/ 
+    margin: 10px 0;
+}
+
+.news-cars img{
+    width: 100%;
+    height: 350px;
+}
+
+.news-cars h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.news-cars h3,
+.news-cars{
+    color: #ffffff;/*color del texto debajo de las imagenes de nuestro colegio*/
+}
+
+/*...............................*/
+.news-cars a{
+    padding: 10px 0;
+    color: #f2f2f2;
+    text-transform: uppercase;/*para que el boton o texto este en mayuscula*/
+    display: inline-block;
+    font-weight: bold;
+}
+.news-cars a:hover{
+    text-decoration: underline;
+}
+/*...............................*/
+
+/*CARS BANNER ,estilizando el banner*/
+.cards-banner-one{
+    width: 100%;
+    height: 350px;
+    background:url('./img/baner.jpeg')no-repeat center center/cover;
+    margin-bottom: 40px;
+}
+.cards-banner-one .content{
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: #ffffff;
+}
+
+.cards-banner-one p,
+.cards-banner-one h2{
+    margin: 10px 0 20px 0;
+}
+
+/*CARS BANNER 2 ,estilizando el banner2*/
+.cards-banner-two{
+    width: 100%;
+    height: 400px;
+    background: url('./img/baner2.jpg') no-repeat center center/cover;
+}
+
+.cards-banner-two .content{
+    width: 100%;
+    padding: 100px 0 0 30px;
+    color: #ffffff;
+}
+/*CARS BANNER 3 ,estilizando el banner3*/
+.cards-pie-twoo{
+    width: 100%;
+    height: 400px;
+    background: url('./img/pie2.JPG') no-repeat center center/cover;
+}
+
+.cards-pie-twoo .content{
+    width: 500%;
+    padding: 100px 0 0 30px;
+
+    color: #ffffff;
+}
+
+/*social, estilizando el conteido redes sociales*/
+.social{
+    margin: 50px;
+}
+
+.social p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a{
+    margin: 0 30px;
+}
+
+.links a i{
+    font-size: 3rem;
+}
+
+/*FOOTER LINKS <div class="footer-links">, estilizando los links de las 6 columnas*/
+.footer-links footer{
+     color: #616161;
+     font-size: 12px;
+     padding: 10px 0;
+     text-align: center;
+ }
+
+ @media (max-width: 700px){ /*aplicamos tamaño para adaptar pagina al momento de minimizar pagina */
+    .menu-btn{
+        display: block;
+    }
+   .nav-main ul.nav-menu{ /*alteramos las etiquetas para navegacion en celular*/
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 100%;
+        padding: 30px;
+        opacity: .9;
+        transform: translateX(-400px);
+        transition: transform .5s ease-out; /*transicion */
+    }
+/*clase que va alterar el translate(-400px)*/
+.nav-main ul.nav-menu.show{
+   transform: translateX(-20px );
+}
+
+    .menu-btn i.fas.fa-bars {
+        margin-right: 10px;
+    }
+    .nav-main ul.nav-menu li{
+        padding: 20px ;
+        font-size: 14px;
+    }
+
+    .nav-main ul.nav-menu-right{
+        margin-right: 70px;
+    }
+
+    .news-cars{
+         grid-template-columns: repeat(2, 1fr);
+     }
+     .cards-banner-one .content,
+     .cards-banner-two 
+     {
+        width: 80%;
+     }
+
+     .footer-links .footer-container{
+         grid-template-columns: repeat(2, 1fr);
+     }
+ }
+
+ @media (max-width: 500px){ /*aplicamos tamaño para adaptar pagina para movil */
+     .news-cars{
+         grid-template-columns: 1fr;
+     }
+     .news-cars img{
+         height: 270px;
+     }
+     .cards-banner-one .content,
+     .cards-banner-one .content{
+         width: 100%;
+         padding: 60px 20px;
+     }
+     .footer-links .footer-container{
+         grid-template-columns: 1fr;
+     }
+ }
+
+
+
+
+
+
+
