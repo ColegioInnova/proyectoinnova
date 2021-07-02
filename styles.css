@@ -183,6 +183,10 @@ opacity: .6;
     padding: 100px 0 0 30px;
     color: #ffffff;
 }
+.cards-banner-two .content .fas{
+    color: #f2f2f2;
+    border: #f2f2f2;
+}
 /*CARS BANNER 3 ,estilizando el banner3*/
 .cards-pie-twoo{
     width: 100%;
